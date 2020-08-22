@@ -1,0 +1,117 @@
+*
+ First External CSS Stylesheet
+ */
+
+/* Styling for HTML elements */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 60px;
+  line-height: 150%;
+  color: #333;
+  background: #efeee7;
+}
+
+h1 {
+  display: inline-block;
+  background: #008080;
+  padding: 20px 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #eee;
+  text-align: left;
+}
+
+h2 {
+    background: #FFFFFF;
+    padding: 20px 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #008080;
+    text-align: left;
+}
+h3 {
+    background: #FFFFFF;
+    padding: 20px 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #008080;
+    text-align: left;
+}
+
+/* Giving our navbar some padding and a background color */
+.navbar {
+    padding: 10px;
+    background: #008080;
+    float: right;
+  }
+
+/* Getting rid of the default link styles here */
+.navbar li a {
+    color: #000;
+    text-decoration: none;
+    background: white;
+}
+  
+  /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+  .navbar li {
+    display: inline;
+    padding: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: #FFFFFF;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+
+/* Selecting elements by class */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  float: left
+}
+
+/* Selecting elements by ID */
+#main-bio,
+#bio-image {
+  float: left;
+}
+
+#figure {
+  position: relative;
+}
+
+#bio-name {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+}
+
+#main-bio {
+  width: 100%;
+}
+
+#bio-image {
+  width: 300px;
+  height: 300px;
+  margin-right: 20px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
