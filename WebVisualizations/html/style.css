@@ -70,14 +70,14 @@ h3 {
   }
 
 /* Selecting elements by class */
-.container {
+/* .container {
   width: 100%;
   margin: 0 auto;
   float: left
-}
+} */
 
 /* Selecting elements by ID */
-#main-bio,
+/* #main-bio,
 #bio-image {
   float: left;
 }
@@ -100,18 +100,29 @@ h3 {
   width: 300px;
   height: 300px;
   margin-right: 20px;
-}
+} */
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
+/* .column {
     float: left;
     width: 25%;
     padding: 5px;
-  }
+  } */
   
   /* Clear floats after image containers */
-  .row::after {
+  /* .row::after {
     content: "";
     clear: both;
     display: table;
-  }
+  } */
+.float_l{
+  float:left;
+}
+/* .col-md-8, .col-md-4{
+  padding: 0 2em 0 2em;
+} */
+
+.row{
+  width:100%;
+
+}
